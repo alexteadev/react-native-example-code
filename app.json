@@ -1,0 +1,54 @@
+{
+    "expo": {
+        "name": "Owlunion Demo",
+        "slug": "owlunion-demo-app",
+        "description": "Owlunion school application for taking courses",
+        "version": "1.0.0",
+        "platforms": [
+            "ios",
+            "android"
+        ],
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "userInterfaceStyle": "light",
+        "backgroundColor": "#16171D",
+        "primaryColor": "#6C38CC",
+        "splash": {
+            "image": "./assets/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#16171D"
+        },
+        "assetBundlePatterns": [
+            "**/*"
+        ],
+        "ios": {
+            "supportsTablet": true
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/adaptive-icon.png",
+                "backgroundColor": "#ffffff"
+            }
+        },
+        "web": {
+            "favicon": "./assets/favicon.png"
+        },
+        "plugins": [
+            "expo-router",
+            [
+                "expo-notifications",
+                {
+                    "icon": "./assets/notification-icon.png",
+                    "color": "#16171D"
+                }
+            ],
+            [
+                "expo-image-picker",
+                {
+                    "photosPermission": "Need a solution for choosing a profile photo"
+                }
+            ]
+        ],
+        "scheme": "owlunion"
+    }
+}
